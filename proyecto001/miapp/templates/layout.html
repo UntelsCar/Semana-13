@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title  %}
+
+        {% endblock %} 
+        | Semana 13 Papu
+</title>
+{% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+</head>
+<body>
+    <h1> Proyecto Web (LP3 2024) | Carlos Peña </h1>
+    <hr/>
+<ul>
+    <li>
+        <a href="/index"> Inicio</a>
+    </li>
+    <li>
+        <a href="/saludo"> Mensaje de Saludo</a>
+    </li>
+    <li>
+        <a href="/rango"> Mostrar Números [a,b]</a>
+    </li>
+    <li>
+        <a href="/rango2/40/30"> Mostrar Números [40,30]</a>
+    </li>
+</ul>
+<hr/>
+    <div id="content">
+        {% block content %}
+            <strong> Contenido en layout (Padre) </strong>
+        {% endblock %}
+    </div>
+    <footer>
+        UNTELS - Lenguaje de Programación III &copy; Carlos Peña
+    </footer>
+    
+</body>
+</html>
