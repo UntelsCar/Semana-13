@@ -22,7 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('saludo/', views.saludo, name = "saludo"),
     path('',views.index, name="index"),
-    path('index/',views.index, name="index"),
+    path('inicio/',views.index, name="index"),
     path('rango/',views.rango, name="rango"),
     path('rango2/<int:a>',views.rango2, name="rango2"),
     path('rango2/<int:a>/<int:b>',views.rango2, name="rango2"),
